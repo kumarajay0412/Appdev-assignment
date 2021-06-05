@@ -178,7 +178,7 @@ import OrbitControlsView from 'expo-three-orbit-controls';
           }
         });
 ```
-PROBLEM FACED - There is nothing implemented in expo three for rendering the animation of the model it always shows the still model doesn't matter if it is animated or not created a issue in the expo three repo.
+PROBLEM FACED - There is nothing implemented , not any examples and anything in expo three documentation for rendering the animation of the model it always shows the still model doesn't matter if it is animated or not created a issue in the expo three repo.
 
 Refrences :
 
