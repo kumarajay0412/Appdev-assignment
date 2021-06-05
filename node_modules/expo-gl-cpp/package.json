@@ -1,0 +1,29 @@
+{
+  "name": "expo-gl-cpp",
+  "version": "9.2.0",
+  "description": "C++ bindings for WebGL 2.0 used in Expo GL module",
+  "main": "index.js",
+  "keywords": [
+    "react-native",
+    "expo",
+    "gl",
+    "glview",
+    "webgl",
+    "cpp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/expo/expo.git",
+    "directory": "packages/expo-gl-cpp"
+  },
+  "devDependencies": {
+    "expo-module-scripts": "~1.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/expo/expo/issues"
+  },
+  "author": "650 Industries, Inc.",
+  "license": "MIT",
+  "homepage": "https://docs.expo.io/versions/latest/sdk/gl-view/",
+  "gitHead": "bc6b4b3bc3cb5e44e477f145c72c07ed09588651"
+}
