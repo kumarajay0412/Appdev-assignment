@@ -4,7 +4,14 @@
 
 A native application for ios and andriod which can be used to display the 3d models which are of gltf format and can be previewed in this application . we can view the 3d from every direction and interact with it and change the desired model by selecting on two buttons provided . UI is built using Expo react-native paper . 
 
-[Video demo](https://github.com/kumarajay0412/Appdev-assignment/edit/main/README.MD)
+[Video demo of the app ](https://drive.google.com/file/d/1eUdmA7aKsqTyPkIWTOJOsR4TqYjAtCdU/view?usp=sharing)
+
+
+
+
+![Screenshot 2021-06-06 at 3 00 30 AM](https://user-images.githubusercontent.com/66991625/120906154-b4fe4200-c674-11eb-98e8-3afce1996723.png)
+![Screenshot 2021-06-06 at 3 00 54 AM](https://user-images.githubusercontent.com/66991625/120906156-b7609c00-c674-11eb-894a-e2bade8f38ef.png)
+
 
 ## Implementation
 
@@ -171,6 +178,8 @@ import OrbitControlsView from 'expo-three-orbit-controls';
           }
         });
 ```
+PROBLEM FACED - There is nothing implemented in expo three for rendering the animation of the model it always shows the still model doesn't matter if it is animated or not created a issue in the expo three repo.
+
 Refrences :
 
 * [expo three](https://github.com/expo/expo-three#readme)
@@ -184,4 +193,6 @@ Refrences :
 * [https://snack.expo.io/@bacon/load-simple-obj-model](https://snack.expo.io/@bacon/load-simple-obj-model)
 * [https://github.com/expo/expo-three/issues/5](https://github.com/expo/expo-three/issues/5)
 * [https://github.com/expo/expo-three/issues/166](https://github.com/expo/expo-three/issues/166)
+
+
 
