@@ -30,10 +30,10 @@ export default function App() {
         <TouchableOpacity >
         <View style={styles.item}>
           <Button mode="contained" color="blanchedalmond" onPress={changeModel1}>
-            Model 1
+            Animation 1
           </Button>
           <Button mode="contained" color="blanchedalmond" onPress={ changeModel2}>
-            Model 2
+          Animation 2
           </Button>
         </View>
         </TouchableOpacity >
