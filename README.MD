@@ -2,9 +2,9 @@
 
 ## Overview
 
-A native application for ios and andriod which can be used to display the 3d models which are of gltf format and can be previewed in this application . we can view the 3d from every direction and interact with it and change the desired model by selecting on two buttons provided . UI is built using Expo react-native paper . 
+A native application for ios and andriod which can be used to display the 3d models with animation which are of gltf format and can be previewed in this application . we can view the 3d from every direction and interact with it and change the desired model by selecting on two buttons provided . UI is built using Expo react-native paper . We can move evry movement of every limb . 
 
-[Video demo of the app ](https://drive.google.com/file/d/1eUdmA7aKsqTyPkIWTOJOsR4TqYjAtCdU/view?usp=sharing)
+[Video demo of the app ](https://drive.google.com/file/d/1n7cwCl1b_G8Y6gn8v6am4U4LE7G0UGxI/view?usp=sharing)
 
 
 
@@ -121,7 +121,18 @@ import OrbitControlsView from 'expo-three-orbit-controls';
 
 ```
 - Used TouchableOpacity a wrapper for making views respond properly to touches. On press down, the opacity of the wrapped view is decreased, dimming it.
+- We can change orientation of every limb by studying the nature of gltf format of the model .
+- ![Screenshot 2021-06-08 at 11 01 48 AM](https://user-images.githubusercontent.com/66991625/121129344-6efad700-c84a-11eb-8bb8-10ffa2103ffd.png)
+- A small example of how to do it .
+ ```
 
+              rightArm = model.getObjectByName("mixamorigRightArm");
+              const t = clock.getElapsedTime();
+              if(rightArm){
+                    rightArm.rotation.z += Math.sin(t) * 0.105;
+               }
+ ```
+![Screen Recording 2021-06-08 at 11 07 43 AM](https://user-images.githubusercontent.com/66991625/121129872-35769b80-c84b-11eb-8b9b-2908169ea796.gif)
 - Used styles to do add design and to make better UI
 
 ```
@@ -178,10 +189,14 @@ import OrbitControlsView from 'expo-three-orbit-controls';
           }
         });
 ```
-PROBLEM FACED - There is nothing implemented , not any examples and anything in expo three documentation for rendering the animation of the model it always shows the still model doesn't matter if it is animated or not created a issue in the expo three repo.
+PROBLEM FACED 
+- Tried to by using the .fbx format for long aand cannot do it .
+- gftl format should be of small size otherwise we get error : Creating blobs from 'ArrayBuffer' and 'ArrayBufferView' are not supported.
+- In learning the properties of gftl format.
+- we cannot use  remote debug while using gl view . 
 
 Refrences :
-
+* [https://threejs.org/docs/?q=gftl#examples/en/loaders/GLTFLoader](https://threejs.org/docs/?q=gftl#examples/en/loaders/GLTFLoader)
 * [expo three](https://github.com/expo/expo-three#readme)
 * [three.js](https://threejs.org/)
 * [expo-three-orbit-controls](https://github.com/EvanBacon/expo-three-orbit-controls)
